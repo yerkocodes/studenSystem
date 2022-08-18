@@ -9,5 +9,8 @@ public interface ICursoRepository extends CrudRepository<Curso, String> {
 	
 	@Query("SELECT * FROM Curso WHERE codigo_curso = :codidoDelCurso")
 	public Curso findByIdCurso(String codigoDelCurso);
+	
+	@Query("DELETE FROM Curso WHERE codigo_curso = :codigoDelCurso")
+	public Curso deleteCursoWithId(String codigoDelCurso);
 
 }
