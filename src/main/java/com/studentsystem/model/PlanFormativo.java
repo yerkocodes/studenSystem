@@ -2,8 +2,6 @@ package com.studentsystem.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -14,18 +12,17 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-@Entity(name = "Comuna")
-@Table(name = "Comuna")
-public class Comuna {
+@Entity(name = "Plan_Formativo")
+@Table(name = "Plan_Formativo")
+public class PlanFormativo {
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY) //MYSQL
-	private Integer codigo_comuna;
+	private String codigo_plan_formativo;
 
 	@Column(nullable = false)
-	private String nombre;
+	private String descripcion;
 
 	@Column(nullable = false)
-	private int codigo_region;
+	private Integer duracion_horas;
 
 }
