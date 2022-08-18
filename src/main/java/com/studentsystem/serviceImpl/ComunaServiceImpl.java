@@ -50,14 +50,14 @@ public class ComunaServiceImpl implements IComunaService {
 	@Override
 	@Transactional(readOnly = true)
 	public Comuna findById(Integer id) {
-		Comuna estudiante = new Comuna();
+		Comuna comuna = new Comuna();
 		try {
-			estudiante = dao.findById(id).get();
+			comuna = dao.findById(id).get();
 		} catch (Exception e) {
 			log.error("Ocurred an error in 'findById'. Location: 'com.studentsystem.serviceImpl'. Error: " + e.getMessage());
 		}
 		
-		return estudiante;
+		return comuna;
 	}
 
 	@Override
