@@ -17,6 +17,6 @@ public interface ICursoService {
 	public Curso update(Curso curso);
 
 	//DELETE
-	public Boolean deleteCurso(Integer id);
+	public Boolean deleteCurso(String id);
 
 }
