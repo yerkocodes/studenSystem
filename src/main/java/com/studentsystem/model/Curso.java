@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -15,6 +16,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+@Table(name = "Curso")
 @Entity
 public class Curso {
 	
@@ -26,9 +28,9 @@ public class Curso {
 	private Date fecha_inicio;
 
 	@Column(nullable = false)
-	private Date fecha_termino;
+	private Date fecha_termno;
 
 	@Column(nullable = false)
-	private String codigo_modulo;
+	private String codigo_plan_formativo;
 
 }
