@@ -12,7 +12,6 @@ public interface IRegionService {
 	//READ
 	public List<Region> findAllRegiones();
 	public Region findById(Integer id);
-	public Region findByRut(String rut);
 
 	//UPDATE
 	public Region update(Region region);
