@@ -7,10 +7,10 @@ import com.studentsystem.model.Curso;
 
 public interface ICursoRepository extends CrudRepository<Curso, String> {
 	
-	@Query("SELECT * FROM Curso WHERE codigo_curso = :codidoDelCurso")
+	@Query(value = "SELECT * FROM Curso WHERE codigo_curso = ?1", nativeQuery = true)
 	public Curso findByIdCurso(String codigoDelCurso);
 	
-	@Query("DELETE FROM Curso WHERE codigo_curso = :codigoDelCurso")
+	@Query(value = "DELETE FROM Curso WHERE codigo_curso = ?1", nativeQuery = true)
 	public Curso deleteCursoWithId(String codigoDelCurso);
 
 }
