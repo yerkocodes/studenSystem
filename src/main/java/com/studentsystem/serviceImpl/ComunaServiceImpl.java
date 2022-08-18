@@ -61,12 +61,6 @@ public class ComunaServiceImpl implements IComunaService {
 	}
 
 	@Override
-	@Transactional(readOnly = true)
-	public Comuna findByRut(String rut) {
-		return null;
-	}
-
-	@Override
 	@Transactional
 	public Comuna update(Comuna comuna) {
 		Comuna comunaToUpdate = new Comuna();

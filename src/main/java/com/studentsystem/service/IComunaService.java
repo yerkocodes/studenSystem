@@ -12,7 +12,6 @@ public interface IComunaService {
 	//READ
 	public List<Comuna> findAllComunas();
 	public Comuna findById(Integer id);
-	public Comuna findByRut(String rut);
 
 	//UPDATE
 	public Comuna update(Comuna comuna);
