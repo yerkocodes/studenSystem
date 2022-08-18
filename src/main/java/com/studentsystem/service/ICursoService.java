@@ -11,7 +11,7 @@ public interface ICursoService {
 
 	//READ
 	public List<Curso> findAllCursos();
-	public Curso findById(Integer id);
+	public Curso findById(String id);
 	public Curso findByRut(String rut);
 
 	//UPDATE
